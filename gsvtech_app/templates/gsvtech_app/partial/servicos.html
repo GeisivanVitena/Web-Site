@@ -1,0 +1,79 @@
+{% extends "gsvtech_app/global/index.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<h1 style="margin-top: 80px; margin-left: 20px;">Nossos serviços<i class="fas fa-briefcase logo" style="margin-left: 15px; font-size: 60px"></i></h1>
+
+<hr class="featurette-divider">
+
+<div class="container-pai">
+    <div class="card" style="--cor:#00acff;">
+        <div class="img-box">
+            <img src="{% static "img/software.jpg" %}">
+        </div>
+        <div class="content">
+            <h2>Software<i class="fas fa-desktop" style=" margin-left: 15px; margin-right: 15px; font-size: 30px"></i></h2>
+            <p>
+                Desenvolvimento de sistemas Desktop, Web, Mobile, APIs RESTful, Machine Learning.
+            </p>
+            <a href="#" class="read-more">Leia Mais</a>
+        </div>
+    </div>
+
+    <div class="card" style="--cor:#00acff;">
+        <div class="img-box">
+            <img src="{% static "img/mobile.jpg" %}">
+        </div>
+        <div class="content">
+            <h2>Mobile<i class="fas fa-mobile-alt" style=" margin-left: 15px; margin-right: 15px; font-size: 30px"></i></h2>
+            <p>
+                Desenvolvimento Nativo, Aplicativos Híbridos, Integração de APIs, Suporte e Manutenção de Aplicativos.
+            </p>
+            <a href="#">Leia Mais</a>
+        </div>
+    </div>
+
+    <div class="card" style="--cor:#00acff;">
+        <div class="img-box">
+            <img src="{% static "img/artificial.jpg" %}">
+        </div>
+        <div class="content">
+            <h2>IA<i class="fas fa-brain" style=" margin-left: 15px; margin-right: 15px; font-size: 30px"></i></h2>
+            <p>
+                Automação de Processos, Análise Preditiva, Reconhecimento de Imagens e Padrões, Chatbots e Assistente Virtual
+            </p>
+            <a href="#">Leia Mais</a>
+        </div>
+    </div>
+
+    <div class="card" style="--cor:#00acff;">
+        <div class="img-box">
+            <img src="{% static "img/consultoria.jpg" %}">
+        </div>
+        <div class="content">
+            <h2>Consultoria<i class="fas fa-users-cog" style=" margin-left: 15px; margin-right: 15px; font-size: 30px"></i></h2>
+            <p>
+                Planejamento Estratégico de TI, Transformação Digital, Gerenciamento de Projetos de TI, Auditoria e Governança de TI.
+            </p>
+            <a href="#">Leia Mais</a>
+        </div>
+    </div>
+
+    <div class="card" style="--cor:#00acff;">
+        <div class="img-box">
+            <img src="{% static "img/Manutencao.jpeg" %}">
+        </div>
+        <div class="content">
+            <h2>Suporte<i class="fas fa-wrench" style=" margin-left: 15px; margin-right: 15px; font-size: 30px"></i></h2>
+            <p>
+                Correção de Bugs e Erros, Atualizações e Melhorias, Monitoramento e Análise, Suporte Técnico 24/7
+            </p>
+            <a href="#" class="read-more">Leia Mais</a>
+        </div>
+    </div>
+
+</div> 
+
+{% endblock content %}
