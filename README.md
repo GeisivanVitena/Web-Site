@@ -1,2 +1,1 @@
-# Site-Institucional
-Site institucional para empresa de desenvolvimento de software
+Conteúdo do arquivo no repositório local
