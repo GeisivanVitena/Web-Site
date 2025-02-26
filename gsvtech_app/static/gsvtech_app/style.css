@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #1E90FF, #00FFFF );
+}
+
+/* Animação titulo */
+.animated-title{
+    position: relative;
+    font-size: 3em;
+    color: #333;
+}
+
+.animated-title::before{
+    content: attr(data-text);
+    position: absolute;
+    color: #fff;
+    width: 260px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2.5px solid #fff;
+    animation: animatedTitle 7s linear infinite;
+    filter: drop-shadow(0 0 10px #fff) drop-shadow(0 0 15px #fff3) drop-shadow(0 0 20px #fff);
+}
+
+@keyframes animatedTitle{
+    0%, 10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 50%;
+    }
+}
+
+/* Titulo responsivo */
+.animated-title {
+    font-size: 3rem; /* Tamanho da fonte padrão */
+    transition: font-size 0.3s ease;
+}
+
+/* Ajuste para telas médias (tablets, por exemplo) */
+@media (max-width: 768px) {
+    .animated-title {
+        font-size: 2rem; /* Diminui o tamanho da fonte em telas médias */
+    }
+}
+
+/* Ajuste para telas pequenas (smartphones) */
+@media (max-width: 576px) {
+    .animated-title {
+        font-size: 1.5rem; /* Diminui ainda mais o tamanho da fonte em telas pequenas */
+    }
+}
+
+/* Card animado */
+.container-pai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container-pai .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 0 35px 45px rgba(0,0,0,.15);
+    background: #fff;
+    transition: .5s;
+}
+
+.container-pai .card:hover{
+    height: 400px;
+}
+
+.container-pai .card .img-box{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.container-pai .card:hover .img-box{
+    top: -100px;
+    scale: .75;
+    box-shadow: 0 15px 45px rgba(0,0,0,.2);
+}
+
+.container-pai .card .img-box img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-pai .card .content{
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    overflow: hidden;
+    text-align: center;
+    transition: .5s;
+}
+
+.container-pai .card:hover .content{
+    top: 150px;
+    height: 250px;
+}
+
+.container-pai .card .content h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    color: var(--cor);
+    
+}
+
+.container-pai .card .content p{
+    color: black;
+}
+
+.container-pai .card .content a{
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    text-decoration: none;
+    font-weight: 500;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #1E90FF, #00FFFF );
+    color: #fff;
+    transition: .5s;
+}
+
+.container-pai .card .content a:hover{
+    background: #040305;
+    transition: .5s;
+}
+
+/* Icone neon */
+
+#icon{
+    font-size: 2em;
+    animation: animate 3s linear infinite;
+    color: #0072ff; /* Cor inicial do ícone */
+}
+
+#logo{
+    animation-delay: 0.35;
+}
+
+@keyframes animate{
+    from{
+        filter: hue-rotate(0deg);
+    }
+    to{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* Efeito nos links*/
+.contact-info a {
+    font-size: 1.2rem;
+    margin-top: 30px;
+    color: #000; /* Cor inicial do texto (preto) */
+    text-decoration: none; /* Remover underline */
+    transition: color 0.3s ease; /* Suavizar a transição da cor */
+}
+
+.contact-info a:hover {
+    color: #fff; /* Cor do texto ao passar o mouse (branco) */
+}
+
+.contact-info i {
+    margin-right: 20px; /* Ajuste esse valor conforme necessário */
+}
+
+.nav-link {
+    color: #000 !important; /* Cor inicial do texto (preto) */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Suaviza a transição da cor */
+}
+
+.nav-link:hover {
+    color: #fff !important; /* Cor do texto ao passar o mouse (branco) */
+}
+
